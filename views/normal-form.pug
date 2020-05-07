@@ -1,0 +1,7 @@
+extends layout.pug
+
+block content
+    include includes/errors.pug
+    form(method="post",action="/create").form-group
+        include includes/form-inputs.pug
+        input(type="submit" value="Create User")
